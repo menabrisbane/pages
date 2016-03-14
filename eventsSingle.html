@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="HandheldFriendly" content="true" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title>EventsSingle</title>
+	<!-- ========== CSS INCLUDES ========== -->
+	<link rel="stylesheet" href="assets/css/master.css">
+</head>
+<body>
+	<div class="page-loader">
+	     <div class="vertical-align align-center">
+	          <img src="assets/loader/loader.gif" alt="" class="loader-img">
+	     </div>
+    </div>
+	<!-- ================================================== -->
+	<!-- =============== START PLAYER ================ -->
+	<!-- ================================================== -->
+	<div id="jp_container_N" class="jplayer-home homeNormal">
+			<div class="jp-type-playlist">
+				<div class="jp-gui">
+					<div class="minWrap">
+						<div class="custom-buttons">
+							<div id="h-player"><i class="fa fa-minus"></i></div>
+						</div>
+					</div>
+					<div class="jp-interface container">
+						<div class="jp-controls-holder">
+							<div class="jp-controls">
+								<button class="jp-previous" tabindex="0"><i class="fa fa-step-backward"></i></button>
+								<button class="jp-play" tabindex="0"><i class="fa fa-play"></i></button>
+								<!-- <button class="jp-stop" tabindex="0"><i class="flaticon-geometry60"></i></button> -->
+								<button class="jp-next" tabindex="0"><i class="fa fa-step-forward"></i>
+								</button>
+									<button id="playlist-toggle" class="jplayerButton">
+										<span class="span-1"></span>
+										<span class="span-2"></span>
+										<span class="span-3"></span>
+									</button>
+							</div><!-- .jp-controls -->
+							<!-- <div class="jp-toggles">
+								<button class="jp-repeat" tabindex="0"><i class="flaticon-round72"></i></button>
+								<button class="jp-shuffle" tabindex="0"><i class="flaticon-random9"></i></button>
+							</div> --><!-- .jp-toggles --> 
+						</div><!-- .jp-controls-holder -->
+						<div class="progress-wrapper">
+							<span class="jp-current-time" role="timer" aria-label="time">&nbsp;</span>
+							
+							<span class="jp-duration" role="timer" aria-label="duration">&nbsp;</span>
+							<div class="jp-progress">
+								<div class="jp-seek-bar">
+									<div class="jp-play-bar"></div>
+								</div>
+							</div><!-- .jp-progress -->
+						</div>
+						<!-- <div class="jp-details">
+							<div class="jp-title" aria-label="title">&nbsp;</div>
+						</div> -->
+						<div class="track-wrapper">
+							<div id="jquery_jplayer_N" class="jp-jplayer"></div><!-- .jp-layer PHOTO CONTAINER -->
+							<div id="nowPlaying"></div><!-- #nowPlaying -->
+						</div>
+					</div><!-- .jp-interface -->
+				</div><!-- .jp-gui -->
+				<div id="playlist-wrapper" class="playlist-wrapper">
+					<div class="jp-playlist container">
+						<div class="header-text">
+							<h1><img src="assets/img/header/logoB.png" alt=""></h1>
+							<p>PLAYERLIST</p>
+						</div>
+						<div class="about-list clearfix">
+							<span class="about-name">NAME</span>
+							<span class="about-length">LENGTH</span>
+							<span class="about-available">AVAILABLE ON</span>
+						</div>
+						<ul>
+							<!-- The method Playlist.displayPlaylist() uses this unordered list -->
+							<li>&nbsp;</li>
+						</ul>
+					</div><!-- .jp-playlist -->
+				</div>
+				<div class="jp-no-solution">
+					<span>Update Required</span>
+					To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+				</div><!-- .jp-no-solution -->
+			</div><!-- .jp-type-playlist -->
+	</div><!-- .jp-container_N -->
+	<!-- ================================================== -->
+	<!-- =============== END PLAYER ================ -->
+	<!-- ================================================== -->
+
+	<!-- ================================================== -->
+	<!-- =============== START BREADCRUMB ================ -->
+	<!-- ================================================== -->
+	<section class="no-mb">
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="before-FullscreenSlider"></div>
+				<div class="breadcrumb-fullscreen-parent ">
+					<div class="breadcrumb singleEv breadcrumb-fullscreen alignleft small-description overlay almost-black-overlay" style="background-image: url('assets/img/demo/a.png');" data-stellar-background-ratio="0.5" data-stellar-vertical-offset="0">
+						<!-- ================= COUNTER ==================== -->
+						<div class="homeCounter">
+							<div class="HomeEventTitle">
+								<h1>Electric Castle</h1>
+								<div class="sm-countdown sm_content_element sm_ttc sm-style2" id="sm_countdown-19" data-date="2015/10/10">
+								<style scoped="">.sm-countdown#sm_countdown-19 .unit{color:#fff;}.sm-countdown#sm_countdown-19 .element{color:#fff !important;}</style>	
+									<div class="row displayCounter">
+										<div class="column">
+											<div class="sm_countdown_inner">
+												<input class="element days" readonly="readonly" data-min="0" data-max="365" data-width="200" data-height="200" data-thickness="0.15" data-fgcolor="#fff" data-bgcolor="#8e8d8d" data-angleoffset="180">
+												<span class="unit days-title">days</span>
+											</div>
+										</div>    
+										<div class="column">
+											<div class="sm_countdown_inner">
+												<input class="element hour" readonly="readonly" data-min="0" data-max="24" data-width="200" data-height="200" data-thickness="0.15" data-fgcolor="#fff" data-bgcolor="#8e8d8d" data-angleoffset="180">
+												<span class="unit hours-title">hrs</span>
+											</div>
+										</div>    
+										<div class="column"> 
+											<div class="sm_countdown_inner">
+												<input class="element minute" readonly="readonly" data-min="0" data-max="60" data-width="200" data-height="200" data-thickness="0.15" data-fgcolor="#fff" data-bgcolor="#8e8d8d" data-angleoffset="180">
+												<span class="unit mins-title">min</span>
+											</div>
+										</div>
+										<div class="column"> 
+											<div class="sm_countdown_inner">
+												<input class="element second" readonly="readonly" data-min="0" data-max="60" data-width="200" data-height="200" data-thickness="0.15" data-fgcolor="#fff" data-bgcolor="#8e8d8d" data-angleoffset="180">
+												<span class="unit secs-title">sec</span>
+											</div>
+										</div>
+									</div>
+							</div>
+							</div>
+							
+						</div><!-- end homeCounter -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- ================================================== -->
+	<!-- =============== END BREADCRUMB ================ -->
+	<!-- ================================================== -->
+
+	<!-- ================================================== -->
+	<!-- =============== MENU CONTAINER ================ -->
+	<!-- ================================================== -->
+	<div class="topContainerHeader clearfix">
+        <div class="rightTopHeader">
+            <div class="cartContainer">
+                <div class="myCart">
+                    <ul>
+                        <li class="cartTitle"><img src="assets/img/header/iS.png" alt=""><span>0</span></li>
+                    </ul>
+                </div>
+                <div class="cartParent">
+                    <div class="cartItems">
+                        <ul>
+                            <li>
+                                <div class="priceCart">
+                                    <img src="assets/img/demo/cart.png" alt="">
+                                    <a href="#">Hoodie T.Brothers <!-- <span><i class="fa fa-times"></i></span> --></a>
+                                    <p>Price:&nbsp;<span>&pound;15,99</span></p>
+                                    <p class="quantity">Quantity: <span>1</span></p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="priceCart">
+                                    <img src="assets/img/demo/cart.png" alt="">
+                                    <a href="#">Hoodie T.Brothers <!-- <span><i class="fa fa-times"></i></span> --></a>
+                                    <p>Price:&nbsp;<span>&pound;15,99</span></p>
+                                    <p class="quantity">Quantity: <span>1</span></p>
+                                </div>                      
+                            </li>
+                        </ul>
+                        <button type="submit" class="single_add_to_cart_button button alt buttonView">
+                                            View Cart
+                        </button>
+                        <button type="submit" class="single_add_to_cart_button button alt buttonCheck">
+                            Chekout
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Open Menu Button -->
+            <a class="open-menu">
+                <!-- Buttons Bars -->
+                <span class="span-1"></span>
+                <span class="span-2"></span>
+                <span class="span-3"></span>
+            </a>
+        </div>
+        <!-- Menu Fixed Container -->
+        <div class="menu-fixed-container">
+            <!-- Menu Fixed Centred Container -->
+            <nav>
+                <!-- Menu Fixed Close Button -->
+                <div class="x-filter">
+                    <span></span>
+                    <span></span>
+                </div>
+                <!-- Menu Fixed Primary List -->
+                <ul>
+                    <!-- Menu Fixed Item -->
+                    <li>
+                        <a href="index.html">
+                            home
+                        </a>
+                        <ul class="sub-menu">
+                            <!-- Menu Fixed Sub Menu Item -->
+                            <li>
+                                <a href="index.html">
+                                    home star
+                                </a>
+                            </li>
+                            <li>
+                                <a href="indexRS.html">
+                                    home royal slider
+                                </a>
+                            </li>
+                            <!-- Menu Fixed Sub Menu Item -->
+                            <li>
+                                <a href="indexV.html">
+                                    home video 
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="albums.html">
+                            discography
+                        </a>
+                        <ul class="sub-menu">
+                            <!-- Menu Fixed Sub Menu Item -->
+                            <li>
+                                <a href="albums.html">
+                                    albums
+                                </a>
+                            </li>
+                            <!-- Menu Fixed Sub Menu Item -->
+                            <li>
+                                <a href="albumsSecond.html">
+                                    albums grid
+                                </a>
+                            </li>
+                            <!-- Menu Fixed Sub Menu Item -->
+                            <li>
+                                <a href="albumsSingle.html">
+                                    album description
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- Menu Fixed Item -->
+                    <li>
+                        <a href="events.html">
+                            events
+                        </a>
+                    </li>
+                    <!-- Menu Fixed Item -->
+                    <li>
+                        <a href="blog.html">
+                            blog
+                        </a>
+                        <ul class="sub-menu">
+                            <!-- Menu Fixed Sub Menu Item -->
+                            <li>
+                                <a href="blog.html">
+                                    3 column grid
+                                </a>
+                            </li>
+                            <!-- Menu Fixed Sub Menu Item -->
+                            <li>
+                                <a href="blogSecond.html">
+                                    blog sidebar
+                                </a>
+                            </li>
+                            <!-- Menu Fixed Sub Menu Item -->
+                            <li>
+                                <a href="blogSingle.html">
+                                    single post
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- Menu Fixed Item -->
+                    <li>
+                        <a href="gallerySaracie.html">
+                            gallery
+                        </a>
+                        <ul class="sub-menu">
+                            <!-- Menu Fixed Sub Menu Item -->
+                            <li>
+                                <a href="gallerySaracie.html">
+                                    gallery grid
+                                </a>
+                            </li>
+                            <!-- Menu Fixed Sub Menu Item -->
+                            <li>
+                                <a href="galleryScroll.html">
+                                    gallery scroll
+                                </a>
+                            </li>
+                            <!-- Menu Fixed Sub Menu Item -->
+                            <li>
+                                <a href="gallerySg.html">
+                                    gallery single
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- Menu Fixed Item -->
+                    <li>
+                        <a href="#">
+                            Other Pages
+                        </a>
+                        <ul class="sub-menu">
+                            <!-- Menu Fixed Sub Menu Item -->
+                            <li>
+                                <a href="bio.html">
+                                    Biography
+                                </a>
+                            </li>
+                            <!-- Menu Fixed Sub Menu Item -->
+                            <li>
+                                <a href="video.html">
+                                    Video
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- Menu Fixed Item -->
+                    <li>
+                        <a href="contact.html">
+                            contact
+                        </a>
+                    </li>
+                    <!-- Menu Fixed Item -->
+                    <li>
+                        <a href="shop.html">
+                            shop
+                        </a>
+                    </li>
+                </ul>
+                <!-- Menu Fixed Close Button -->
+                <div class="x-filter">
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+	<!-- ================================================== -->
+	<!-- =============== END MENU CONTAINER ================ -->
+	<!-- ================================================== -->
+	
+	<!-- ================= LOGO CONTAINER ==================== -->
+	<div class="logo-container-top ">
+	        <a href="index.html"><img src="assets/img/header/logoWH.png" alt="Colibri"></a>
+	        <a href="index.html"><img src="assets/img/header/logoB.png" alt="Colibri"></a>
+	    </div><!-- end logo-container-top -->
+	</div><!-- end logo-container-top -->
+	
+
+	<!-- ================================================== -->
+	<!-- =============== EVENTS ================ -->
+	<!-- ================================================== -->
+	<section class="padding eventsSection " style="background-image:url(assets/img/demo/eventsBgk.png); padding-bottom:18.4rem;">
+        <!-- Content Container -->
+        <div class="container">
+        	<div class="sectionTitle">
+				<span class="heading-t3"></span>
+				<h2><a href="albums.html">Description</a></h2>
+				<span class="heading-b3"></span>
+			</div><!-- end sectionTtile -->
+            <div class="col-sm-12">
+                <!-- Content Container -->
+                <div class="content-container clearfix">
+                    <div class="col-sm-8">
+                        <div class="contentSingleEvents">
+                            <p>ELECTRIC CASTLE is the first Romanian festival that took electronic dance music and live concerts sounds to a castle’s domain. Since its first edition in 2013, the festival was shortlisted every year for the Best Medium Sized Festival Category at the European Festival Awards, among other important European names.Held on the domain of Bánffy Castle (or Bonţida Bánffy Castle), Electric Castle Festival is an unique, mind-blowing experience.</p>
+                            <p>It shakes up the way people interact with music by combining a visually innovative concept with an eclectic musical line-up, breaking the boundaries between electronic music and reggae, mainstream and subculture genres. It’s the only music festival in Romania to offer a complete and authentic experience through notorious international artists, a vast camping area, a diverse food court and an exceptional scenery.</p>
+                        </div><!-- end contentSingleEvents -->
+                        <div class="coverEvent">
+                        	<a href="assets/img/demo/coverEvent.png" class="lightbox">
+								<img src="assets/img/demo/coverEvent.png" alt="">
+							</a>
+                        </div>
+                        <div class="ticket">
+                        	<h4>Get Your Ticket Now</h4>
+                            <a href="#">Buy Ticket</a>
+                        </div>
+                    </div><!-- end col-sm-8 -->
+                    <div class="col-sm-3 col-sm-offset-1">
+                        <div class="sidebar">
+							<div class="details">
+								<div class="titleAlbum tAlbum">
+									<h2>Details</h2>
+								</div>
+								<ul>
+									<li>Date:<span>december 15, 2015 </span></li>
+									<li>Time:<span>22:00 &nbsp;/&nbsp; 04:00 </span></li>
+									<li>Location:<span>Los Angeles</span></li>
+									<li>Price:<span>10 $</span></li>
+								</ul>
+							</div>
+							<div class="tracklist">
+								<div class="titleAlbum">
+									<h2>Instagram</h2>
+								</div>
+								<div class="instagram-widget">
+									<ul id="instagram-sidebar-widget" class="clearfix"></ul>
+								</div>
+							</div>
+							<div class="available">
+								<div class="titleAlbum">
+									<h2>Follow Event On :</h2>
+								</div>
+								<div class="hvr-sweep-to-top">
+									<a href="#">Facebook</a>
+								</div>
+								<div class="hvr-sweep-to-top">
+									<a href="#">Instagram</a>
+								</div>
+								<div class="hvr-sweep-to-top">
+									<a href="#">Twitter</a>
+								</div>
+							</div>
+						</div>
+                    </div><!-- end col-sm-4 -->
+                </div>
+            </div>
+        </div>
+    </section>
+	<!-- ================================================== -->
+	<!-- =============== END EVENTS ================ -->
+	<!-- ================================================== -->
+
+	<!-- ================= MAP ==================== -->
+	<section class="">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-12">
+					<div id="map-canvas" class="google-map" data-lat="40.7841484" data-long="-73.9661407" data-img="assets/img/contact/marker.png"></div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- ================================================== -->
+	<!-- =============== START PAGINATION ================ -->
+	<!-- ================================================== -->
+	<section class="paginationFooter ">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="col-sm-6">
+						<a href="#" class="pagination-previous">
+							<small>Prev Event</small>
+							<span>Los Angeles, California</span>
+						</a>
+					</div>
+					<div class="col-sm-6">
+						<a href="#" class="pagination-next">
+							<small>Next Event</small>
+							<span>Alba, Felewood</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- ================================================== -->
+	<!-- =============== END PAGINATION ================ -->
+	<!-- ================================================== -->
+
+	<!-- ================================================== -->
+	<!-- =============== START FOOTER ================ -->
+	<!-- ================================================== -->
+	<section style="background-color:#eeeeee;" class="change-menu zIndex change-logo">
+		<div class="footer footerPadding">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-4">
+						<div class="copyFooter">
+							<a href="#">&copy; Aqura 2015</a>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<nav class="social-icons">
+							<ul>
+	                			<li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
+	                			</li><li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
+	                			<li><a href="#" target="_blank"><i class="fa fa-apple"></i></a></li>   
+	                			<li><a href="#" target="_blank"><i class="fa fa-lastfm"></i></a>
+	                			</li><li><a href="#" target="_blank"><i class="fa fa-soundcloud"></i></a></li>
+	                			<li><a href="#" target="_blank"><i class="fa fa-youtube-play"></i></a></li> 
+	                			<li><a href="#" target="_blank"><i class="fa fa-vine"></i></a></li>          
+                			</ul>
+						</nav>
+					</div>
+					<div class="col-sm-4">
+						<div class="goTop" id="back-to-top">
+							<i class="fa fa-angle-up"></i>
+							<a href="#">Go Top</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- ================================================== -->
+	<!-- =============== END FOOTER ================ -->
+	<!-- ================================================== -->
+
+	<!-- ================================================== -->
+	<!-- =============== START JQUERY SCRIPTS ================ -->
+	<!-- ================================================== -->
+
+	<script src="assets/js/jquery.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/counter.js"></script>
+	<script src="assets/js/plugins.js"></script>
+	<script src="assets/js/map.js"></script>
+	<script type="text/javascript" src="assets/jplayer/jplayer/jquery.jplayer.js"></script>
+	<script type="text/javascript" src="assets/jplayer/add-on/jplayer.playlist.js"></script>
+	<script type="text/javascript" src="assets/js/playlist.js"></script>
+	<script src="assets/js/main.js"></script>
+
+	<!--[if lte IE 9 ]>
+		<script src="assets/js/placeholder.js"></script>
+		<script>
+			jQuery(function() {
+				jQuery('input, textarea').placeholder();
+			});
+		</script>
+	<![endif]-->
+	
+	<!-- ================================================== -->
+	<!-- =============== END JQUERY SCRIPTS ================ -->
+	<!-- ================================================== -->
+	
+</body>
+</html>

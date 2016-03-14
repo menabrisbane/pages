@@ -1,0 +1,104 @@
+// Scroll
+.scroll-BG {
+	border-bottom: 1px transparent !important;
+}
+
+.shopTopCont{
+	background-color: #fff;
+}
+//LOGO
+.logo-container-top {
+    float: left;
+	z-index: 6;
+	position: relative;
+	top: -4px;
+	img {
+		max-height: 75px;
+		max-width: 100%;
+	}
+	a{
+		&:last-child{
+			display: none;
+		}
+	}
+	&.affix{
+		a{
+			&:first-child{display: none;}
+			&:last-child{display: block;}
+		}
+	}
+}
+.breadcrumb-fullscreen-parent{
+	&.affix{
+		.ava-slider-container{
+			margin-bottom: 0!important;
+		}
+	}
+}
+
+.starTitle{
+	position: absolute;
+	top: 50%;
+	text-align: center;
+	left: 50%;
+	z-index: 1;
+	transform:translate(-50%, -50%);
+	h4,h1{
+		color: #fff;
+		margin: 0;
+		padding: 0;
+		text-transform: uppercase;
+		letter-spacing: 0.8rem;
+	}
+	h4{
+		font-weight: 400;
+		font-size: 1.1rem;
+		font-family: @baseFont;
+	}
+	h1{
+		font-weight: 300;
+		font-size: 8.8rem;
+		font-family: @theme-font-sans-serif;
+		padding: 3rem 0;
+		letter-spacing: 2rem;
+	}
+}
+
+@media (max-width: 1620px) {
+	
+}
+
+@media (max-width: 1420px) {
+	
+}
+
+@media (max-width: 1220px) {
+	
+}
+
+@media (max-width: 1030px) {
+	
+}
+
+@media (max-width: 800px) {
+	.starTitle{
+		h1{
+			font-size: 5rem;
+		}
+	}
+	.star{
+		canvas{
+			visibility: hidden;
+		}
+	}
+}
+
+@media (max-width: 500px) {
+	
+}
+
+@media (max-width: 330px) {
+	
+}
+
+

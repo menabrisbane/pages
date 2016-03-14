@@ -1,0 +1,151 @@
+@theme-color-base: 			#000;
+@theme-font-sans-serif: 	"Open Sans" , Helvetica , Arial , sans-serif;
+@theme-font-serif: 			"Open Sans" , Georgia , Times , serif;
+
+//Special Fonts
+@baseFont:'Karla', sans-serif;
+
+@gray-darker:            lighten(#000, 13.5%); // #222
+@gray-dark:              lighten(#000, 20%);   // #333
+@gray:                   lighten(#000, 33.5%); // #555
+@gray-light:             lighten(#000, 60%);   // #999
+@gray-lighter:           lighten(#000, 93.5%); // #eee
+
+
+@roua-primary-color 			: #1f2021;
+
+@roua-secondary-color 			: #2be6f2;
+
+@roua-primary-margin-bottom 	: 80px;
+
+
+//ThemeSpecialVariables
+@colibri-color-theme: rgba(252,254,112,0.99);
+@aqura-color-theme-alpha-95: rgba(255,255,255,0.98);
+@aqura-color:rgba(255,255,255,0.75);
+// @colibri-color-theme-alpha-95: rgba(252,255,255,0.85);
+@anchor:#999999;
+@purple:#bb9b69;
+@lekton:'Lekton', sans-serif;
+@pt:'PT Sans', sans-serif;
+@libre:'Libre Baskerville', serif;
+@abel:'Abel', sans-serif;
+@mont: 'Montserrat', sans-serif;
+@carla:'Karla', sans-serif;
+
+//Padding Variables
+.zIndex{
+	position: relative;
+	z-index: 5;
+}
+.paddingVideoHome{
+	padding-top: 14.5rem;
+	padding-bottom: 0;
+}
+.videoG{
+	padding-top: 18.4rem;
+	padding-bottom: 11.4rem;
+}
+.padding{
+	padding: 15.4rem 0;
+}
+.paddingSec{
+	padding: 10rem 0;
+}
+.pBottom{
+	padding-bottom: 0!important;
+}
+.footerPadding{
+	padding: 4rem 0 1rem 0!important;
+}
+.shopPadding{
+	padding-bottom: 18.4rem;
+}
+.eventPadding{
+    padding-top: 0rem;
+    padding-bottom: 33rem;
+}
+.albumsPadding{
+	padding: 43.7rem 0;
+}
+
+//JPLAYER VARIABLES
+@base-color: #ecaa2f;
+@dark: #000; 
+/*======= Less Mixins =======*/
+.round(@size2) { // example: round(100px);
+	width: @size2;
+	height: @size2;
+	border-radius: 50%;
+}
+.lnone { 
+	list-style: none;
+	list-style-type: none;
+}
+.transition(@time:0.2s) {
+	-webkit-transition:all @time linear;
+	-moz-transition:all @time linear;
+	-ms-transition:all @time linear;
+	-o-transition:all @time linear;
+	transition:all @time linear;
+}
+.a-duration(@time:1s) {
+	-webkit-animation-duration: @time;
+	animation-duration: @time;
+}
+.a-name(@name) {
+	animation-name:@name;
+	-webkit-animation-name:@name;
+}
+.a-delay(@time) {
+	-moz-animation-delay:@time;
+	-webkit-animation-delay:@time;
+	animation-delay:@time;
+}
+.a-fill(@mode) {
+	-webkit-animation-fill-mode:@mode;
+	-moz-animation-fill-mode:@mode;
+	animation-fill-mode:@mode;
+}
+.a-count(@count) {
+  -webkit-animation-iteration-count:@count;
+  animation-iteration-count:@count;
+}
+
+/*======= Less Typography =======*/
+
+// Lato Regular
+.lr { 
+	font-family: 'Lato';
+	font-weight: 400;
+}
+// Lato Bold
+.lb { 
+	font-family: 'Lato';
+	font-weight: 700;
+}
+// PT Sans Regular
+.pt-r { 
+	font-family: 'PT Sans';
+	font-weight: 400;
+}
+// PT Sans Bold
+.pt-b { 
+	font-family: 'PT Sans';
+	font-weight: 700;
+}
+// Pacifico
+.pac { 
+	font-family: 'Pacifico';
+	font-weight: 400;
+}
+
+
+
+
+
+
+
+
+
+

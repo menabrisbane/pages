@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="HandheldFriendly" content="true" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title>BlogSingle</title>
+	<!-- ========== CSS INCLUDES ========== -->
+	<link rel="stylesheet" href="assets/css/master.css">
+</head>
+<body>
+	<div class="page-loader">
+	     <div class="vertical-align align-center">
+	          <img src="assets/loader/loader.gif" alt="" class="loader-img">
+	     </div>
+    </div>
+	<!-- ================================================== -->
+	<!-- =============== START PLAYER ================ -->
+	<!-- ================================================== -->
+	<div id="jp_container_N" class="jplayer-home homeNormal">
+			<div class="jp-type-playlist">
+				<div class="jp-gui">
+					<div class="minWrap">
+						<div class="custom-buttons">
+							<div id="h-player"><i class="fa fa-minus"></i></div>
+						</div>
+					</div>
+					<div class="jp-interface container">
+						<div class="jp-controls-holder">
+							<div class="jp-controls">
+								<button class="jp-previous" tabindex="0"><i class="fa fa-step-backward"></i></button>
+								<button class="jp-play" tabindex="0"><i class="fa fa-play"></i></button>
+								<!-- <button class="jp-stop" tabindex="0"><i class="flaticon-geometry60"></i></button> -->
+								<button class="jp-next" tabindex="0"><i class="fa fa-step-forward"></i>
+								</button>
+									<button id="playlist-toggle" class="jplayerButton">
+										<span class="span-1"></span>
+										<span class="span-2"></span>
+										<span class="span-3"></span>
+									</button>
+							</div><!-- .jp-controls -->
+							<!-- <div class="jp-toggles">
+								<button class="jp-repeat" tabindex="0"><i class="flaticon-round72"></i></button>
+								<button class="jp-shuffle" tabindex="0"><i class="flaticon-random9"></i></button>
+							</div> --><!-- .jp-toggles --> 
+						</div><!-- .jp-controls-holder -->
+						<div class="progress-wrapper">
+							<span class="jp-current-time" role="timer" aria-label="time">&nbsp;</span>
+							
+							<span class="jp-duration" role="timer" aria-label="duration">&nbsp;</span>
+							<div class="jp-progress">
+								<div class="jp-seek-bar">
+									<div class="jp-play-bar"></div>
+								</div>
+							</div><!-- .jp-progress -->
+						</div>
+						<!-- <div class="jp-details">
+							<div class="jp-title" aria-label="title">&nbsp;</div>
+						</div> -->
+						<div class="track-wrapper">
+							<div id="jquery_jplayer_N" class="jp-jplayer"></div><!-- .jp-layer PHOTO CONTAINER -->
+							<div id="nowPlaying"></div><!-- #nowPlaying -->
+						</div>
+					</div><!-- .jp-interface -->
+				</div><!-- .jp-gui -->
+				<div id="playlist-wrapper" class="playlist-wrapper">
+					<div class="jp-playlist container">
+						<div class="header-text">
+							<h1><img src="assets/img/header/logoB.png" alt=""></h1>
+							<p>PLAYERLIST</p>
+						</div>
+						<div class="about-list clearfix">
+							<span class="about-name">NAME</span>
+							<span class="about-length">LENGTH</span>
+							<span class="about-available">AVAILABLE ON</span>
+						</div>
+						<ul>
+							<!-- The method Playlist.displayPlaylist() uses this unordered list -->
+							<li>&nbsp;</li>
+						</ul>
+					</div><!-- .jp-playlist -->
+				</div>
+				<div class="jp-no-solution">
+					<span>Update Required</span>
+					To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+				</div><!-- .jp-no-solution -->
+			</div><!-- .jp-type-playlist -->
+	</div><!-- .jp-container_N -->
+	<!-- ================================================== -->
+	<!-- =============== END PLAYER ================ -->
+	<!-- ================================================== -->
+
+	<!-- ================================================== -->
+	<!-- =============== START BREADCRUMB ================ -->
+	<!-- ================================================== -->
+	<section class="no-mb">
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="before-FullscreenSlider"></div>
+
+				<div class="breadcrumb-fullscreen-parent">
+					<div class="breadcrumb breadcrumb-fullscreen alignleft small-description overlay almost-black-overlay" style="background-image: url('assets/img/demo/a.png');" data-stellar-background-ratio="0.5" data-stellar-vertical-offset="0">
+						<div class="breadTxt">
+							<h1>
+								Blog Single
+							</h1>
+							<p>
+								Strength does not come from winning. Your struggles develop your strengths. <br> When you go through hardships and decide not to surrender,<br> that is strength. The worst thing I can be is the same<br> as everybody else. I hate that.
+							</p>
+							<a href="#content" data-easing="easeInOutQuint" data-scroll="" data-speed="900" data-url="false">
+								View More <i class="fa fa-angle-down"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- ================================================== -->
+	<!-- =============== END BREADCRUMB ================ -->
+	<!-- ================================================== -->
+
+	<!-- ================================================== -->
+	<!-- =============== MENU CONTAINER ================ -->
+	<!-- ================================================== -->
+	<div class="topContainerHeader clearfix">
+        <div class="rightTopHeader">
+            <div class="cartContainer">
+                <div class="myCart">
+                    <ul>
+                        <li class="cartTitle"><img src="assets/img/header/iS.png" alt=""><span>0</span></li>
+                    </ul>
+                </div>
+                <div class="cartParent">
+                    <div class="cartItems">
+                        <ul>
+                            <li>
+                                <div class="priceCart">
+                                    <img src="assets/img/demo/cart.png" alt="">
+                                    <a href="#">Hoodie T.Brothers <!-- <span><i class="fa fa-times"></i></span> --></a>
+                                    <p>Price:&nbsp;<span>&pound;15,99</span></p>
+                                    <p class="quantity">Quantity: <span>1</span></p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="priceCart">
+                                    <img src="assets/img/demo/cart.png" alt="">
+                                    <a href="#">Hoodie T.Brothers <!-- <span><i class="fa fa-times"></i></span> --></a>
+                                    <p>Price:&nbsp;<span>&pound;15,99</span></p>
+                                    <p class="quantity">Quantity: <span>1</span></p>
+                                </div>                      
+                            </li>
+                        </ul>
+                        <button type="submit" class="single_add_to_cart_button button alt buttonView">
+                                            View Cart
+                        </button>
+                        <button type="submit" class="single_add_to_cart_button button alt buttonCheck">
+                            Chekout
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Open Menu Button -->
+            <a class="open-menu">
+                <!-- Buttons Bars -->
+                <span class="span-1"></span>
+                <span class="span-2"></span>
+                <span class="span-3"></span>
+            </a>
+        </div>
+        <!-- Menu Fixed Container -->
+        <div class="menu-fixed-container">
+            <!-- Menu Fixed Centred Container -->
+            <nav>
+                <!-- Menu Fixed Close Button -->
+                <div class="x-filter">
+                    <span></span>
+                    <span></span>
+                </div>
+                <!-- Menu Fixed Primary List -->
+                <ul>
+                    <!-- Menu Fixed Item -->
+                    <li>
+                        <a href="index.html">
+                            home
+                        </a>
+                        <ul class="sub-menu">
+                            <!-- Menu Fixed Sub Menu Item -->
+                            <li>
+                                <a href="index.html">
+                                    home star
+                                </a>
+                            </li>
+                            <li>
+                                <a href="indexRS.html">
+                                    home royal slider
+                                </a>
+                            </li>
+                            <!-- Menu Fixed Sub Menu Item -->
+                            <li>
+                                <a href="indexV.html">
+                                    home video 
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="albums.html">
+                            discography
+                        </a>
+                        <ul class="sub-menu">
+                            <!-- Menu Fixed Sub Menu Item -->
+                            <li>
+                                <a href="albums.html">
+                                    albums
+                                </a>
+                            </li>
+                            <!-- Menu Fixed Sub Menu Item -->
+                            <li>
+                                <a href="albumsSecond.html">
+                                    albums grid
+                                </a>
+                            </li>
+                            <!-- Menu Fixed Sub Menu Item -->
+                            <li>
+                                <a href="albumsSingle.html">
+                                    album description
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- Menu Fixed Item -->
+                    <li>
+                        <a href="events.html">
+                            events
+                        </a>
+                    </li>
+                    <!-- Menu Fixed Item -->
+                    <li>
+                        <a href="blog.html">
+                            blog
+                        </a>
+                        <ul class="sub-menu">
+                            <!-- Menu Fixed Sub Menu Item -->
+                            <li>
+                                <a href="blog.html">
+                                    3 column grid
+                                </a>
+                            </li>
+                            <!-- Menu Fixed Sub Menu Item -->
+                            <li>
+                                <a href="blogSecond.html">
+                                    blog sidebar
+                                </a>
+                            </li>
+                            <!-- Menu Fixed Sub Menu Item -->
+                            <li>
+                                <a href="blogSingle.html">
+                                    single post
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- Menu Fixed Item -->
+                    <li>
+                        <a href="gallerySaracie.html">
+                            gallery
+                        </a>
+                        <ul class="sub-menu">
+                            <!-- Menu Fixed Sub Menu Item -->
+                            <li>
+                                <a href="gallerySaracie.html">
+                                    gallery grid
+                                </a>
+                            </li>
+                            <!-- Menu Fixed Sub Menu Item -->
+                            <li>
+                                <a href="galleryScroll.html">
+                                    gallery scroll
+                                </a>
+                            </li>
+                            <!-- Menu Fixed Sub Menu Item -->
+                            <li>
+                                <a href="gallerySg.html">
+                                    gallery single
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- Menu Fixed Item -->
+                    <li>
+                        <a href="#">
+                            Other Pages
+                        </a>
+                        <ul class="sub-menu">
+                            <!-- Menu Fixed Sub Menu Item -->
+                            <li>
+                                <a href="bio.html">
+                                    Biography
+                                </a>
+                            </li>
+                            <!-- Menu Fixed Sub Menu Item -->
+                            <li>
+                                <a href="video.html">
+                                    Video
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- Menu Fixed Item -->
+                    <li>
+                        <a href="contact.html">
+                            contact
+                        </a>
+                    </li>
+                    <!-- Menu Fixed Item -->
+                    <li>
+                        <a href="shop.html">
+                            shop
+                        </a>
+                    </li>
+                </ul>
+                <!-- Menu Fixed Close Button -->
+                <div class="x-filter">
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+	<!-- ================================================== -->
+	<!-- =============== END MENU CONTAINER ================ -->
+	<!-- ================================================== -->
+    
+    <!-- ================= LOGO CONTAINER ==================== -->
+    <div class="logo-container-top">
+            <a href="index.html"><img src="assets/img/header/logoWH.png" alt="Colibri"></a>
+            <a href="index.html"><img src="assets/img/header/logoB.png" alt="Colibri"></a>
+        </div><!-- end logo-container-top -->
+    </div><!-- end logo-container-top -->
+	
+	<!-- ================================================== -->
+	<!-- =============== SINGLE BLOG SECTION ================ -->
+	<!-- ================================================== -->
+	<section class="singleBlogSection " id="content">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-8">
+					<div class="postContentBlog">
+						<div id="owl-demo">
+						  <div class="item"><img src="assets/img/demo/blogSingle.png" alt="Owl Image"></div>
+						  <div class="item"><img src="assets/img/demo/blogSingle.png" alt="Owl Image"></div>
+						</div><!-- end owl demo -->
+
+						<div class="postInfoSingle">
+							<span class="post-date">08 Dec 2015</span>/
+							<span class="post-author"><a href="#">By Admin</a></span>/
+							<span class="post-cateogry"><a href="#">Categories: </a> <a href="#" class="post-categoryInner">Gallery</a></span>/
+							<span class="post-comment"><a href="#">2 Comments</a></span>
+						</div><!-- end postInfo -->
+
+						<h1>About Last Night</h1>
+						<p>Chillwave forage Echo Park butcher banh mi, street art cred locavore kale chips. Before they sold out YOLO street art drinking vinegar, umami hella XOXO Terry Richardson lomo craft beer Tumblr tousled jean shorts tofu squid. Selvage Vice gastropub Tonx Thundercats four loko. Selfies before they sold out ethical shabby chic raw denim. Vice DIY Marfa Echo Park, paleo Terry Richardson post-ironic salvia. Mustache occupy hoodie, letterpress irony cliche food truck seitan four loko. Occupy flexitarian meh cred, tousled Austin kale chips jean shorts shabby chic Echo Park narwhal artisan Wes Anderson fap.</p>
+						<p>Chillwave forage Echo Park butcher banh mi, street art cred locavore kale chips. Before they sold out YOLO street art drinking vinegar, umami hella XOXO Terry Richardson lomo craft beer Tumblr tousled jean shorts tofu squid. Selvage Vice gastropub Tonx Thundercats four loko. Selfies before they sold out ethical shabby chic raw denim. Vice DIY Marfa Echo Park, paleo Terry Richardson post-ironic salvia. Mustache occupy hoodie, letterpress irony cliche food truck seitan four loko. Occupy flexitarian meh cred, tousled Austin kale chips jean shorts shabby chic Echo Park narwhal artisan Wes Anderson fap.</p>
+						<p>Chillwave forage Echo Park butcher banh mi, street art cred locavore kale chips. Before they sold out YOLO street art drinking vinegar, umami hella XOXO Terry Richardson lomo craft beer Tumblr tousled jean shorts tofu squid. Selvage Vice gastropub Tonx Thundercats four loko. Selfies before they sold out ethical shabby chic raw denim. Vice DIY Marfa Echo Park, paleo Terry Richardson post-ironic salvia. Mustache occupy hoodie, letterpress irony cliche food truck seitan four loko. Occupy flexitarian meh cred, tousled Austin kale chips jean shorts shabby chic Echo Park narwhal artisan Wes Anderson fap.</p>
+						<div class="widget widget-tag-cloud widget_tag_cloud">
+							<div class="tagcloudLeft">
+								<a href="#" class="tagTitle">Tag Cloud:</a>
+								<a href="#">8BIT</a>/
+								<a href="#">Photography</a>/
+								<a href="#">Party</a>/
+								<a href="#">Music</a>/
+								<a href="#">DJ</a>
+							</div>
+						</div><!-- end widget -->
+
+						<div class="col-sm-12">
+							<!-- Blog Single Comments -->
+							<div class="comment-container">
+								<div class="row">
+									<div class="col-sm-12">
+							<!-- Informations About Author -->
+							<div class="author-info">
+								<div class="left-author-info">
+									<figure>
+										<img src="assets/img/blog/blg1.png" alt="">
+									</figure>
+								</div>
+								<div class="right-author-info">
+									<h1>
+										By Admin
+									</h1>
+									<p>Literally slow-carb umami, mixtape bicycle rights salvia skateboard. Selfies squid normcore chillwave, slow-carb cred Austin small batch leggings umami cliche trust fund Echo.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-12">
+							<h1 class="title-comments">
+								3 Comments
+							</h1>
+							<!-- ============== COMMENTS ============= -->
+							<ul class="comments">
+								<li>
+									<div class="comment depth-1">
+										<div class="left-section">
+											<img alt="" src="assets/img/demo/author-avatar.jpg">
+										</div>
+										<div class="right-section">
+											<h1>
+												<a href="#">Gabriel Groza</a>
+											</h1>
+											<p class="time-comment">Dec 15, 2015<span class="slashComment">/</span><a class="comment-reply-link" href="#"> Reply</a></p>
+
+											<div class="comment-text">
+												<p>
+													Literally slow-carb umami, mixtape bicycle rights salvia skateboard. Selfies squid normcore chillwave, slow-carb cred Austin small batch leggings umami cliche trust fund Echo Park Pinterest 8-bit. PBR and B church-key keffiyeh
+												</p>
+											</div>
+										</div>
+									</div>
+									<ul class="children">
+										<li>
+											<div class="comment depth-2">
+												<div class="left-section">
+													 <img alt="" src="assets/img/demo/author-avatar.jpg">
+												</div>
+												<div class="right-section">
+													
+													<h1>
+														<a href="#">Calin Tasca</a>
+													</h1>
+													<p class="time-comment">Dec 15, 2015<span class="slashComment">/</span><a class="comment-reply-link" href="#"> Reply</a></p>
+													<div class="comment-text">
+														<p>
+															Literally slow-carb umami, mixtape bicycle rights salvia skateboard. Selfies squid normcore chillwave, slow-carb cred Austin small batch.
+														</p>
+													</div>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<div class="pingback even thread-even depth-1">
+										<div class="left-section">
+											<img alt="" src="assets/img/demo/author-avatar.jpg">
+										</div>
+										<div class="right-section">
+											
+											<h1>
+												<a href="#">Nimeni Daniel</a>
+											</h1>
+											<p class="time-comment">Dec 15, 2015<span class="slashComment">/</span><a class="comment-reply-link" href="#"> Reply</a></p>
+											<div class="comment-text">
+												<p>
+													Literally slow-carb umami, mixtape bicycle rights salvia skateboard. Selfies squid normcore chillwave, slow-carb cred Austin small batch leggings umami cliche trust fund Echo Park Pinterest 8-bit. PBR and B church-key keffiyeh
+												</p>
+											</div>
+										</div>
+									</div>
+								</li>		
+							</ul>
+						</div><!-- end col-sm-12 -->
+					</div>
+				</div>
+				<div class="singleBlogForm">
+					<h1>Leave a comment</h1>
+					<form action="#" method="post" class="comment-form">
+						<input id="author" name="author" type="text" value="" aria-required="true" required placeholder="Name...">
+						<input id="email" name="email" type="text" value="" aria-required="true" required placeholder="Email...">
+						<input id="url" name="url" type="text" value="" placeholder="Website...">
+						<textarea name="comment" placeholder="Message..." rows="6" required></textarea>
+						<p class="form-submit">
+							<input name="submit" type="submit" id="submit" value="Post Comment">
+						</p>
+					</form>
+				</div>
+			</div>
+					</div><!-- end post-content -->
+				</div><!-- end col-sm-9 -->
+				<div class="col-sm-3 col-sm-offset-1">
+					<div class="sidebarContent">
+							<div class="firstItem">
+								<h3>Categories</h3>
+								<a href="blogSecond.html">Audio</a>
+								<a href="blogSecond.html">News</a>
+								<a href="blogSecond.html">Standard</a>
+								<a href="blogSecond.html">Video</a>
+								<a href="blogSecond.html">Soundcloud</a>
+								<a href="blogSecond.html">Gallery</a>
+							</div>
+							<div class="secondItem">
+								<h3>Recent Posts</h3>
+								<a href="blogSingle.html">About Last Night</a>
+								<a href="blogSingle.html">Video Post</a>
+								<a href="blogSingle.html">Soundcloud</a>
+								<a href="blogSingle.html">Post With Audio Tracks</a>
+								<a href="blogSingle.html">Soundcloud</a>
+								<a href="blogSingle.html">Standard Post</a>
+							</div>
+							<div class="tweetItem">
+								<h3>Tweets</h3>
+								<div class="tweetBox clearfix">
+									<img src="assets/img/content/logTweet.png" alt="#">
+									<div class="boxContent">
+										<p>Theme Brothers</p>
+										<a href="#">@Themebrothers.com</a>
+									</div>
+									<div class="tagcloudTweeter">
+										<p>AQURA - Creative Theme for dj, bands<span>  #WordPress#Theme</span> now 
+										on <span>#ThemeForest</span> - <a href="http://twitter.com">http://bit.ly/1Gx4Vvs  pic.twitter.com/1CE8noM15U</a></p>
+									</div>
+								</div>
+							</div>
+							<div class="widget widget_tag_cloud">
+								<h3>Tag Cloud</h3>
+								<div class=" tagcloudSidebar">
+									<a href="#">Audio</a>/
+									<a href="#">Best Event</a>/
+									<a href="#">Soundcloud</a>/
+									<a href="#">Video</a>/
+									<a href="#">Albums</a>/
+									<a href="#">Beatport</a>/
+									<a href="#">Summer</a>/
+									<a href="#">Festival</a>/
+									<a href="#">People</a>/
+									<a href="#">Bands</a>
+								</div>
+							</div><!-- end widget -->
+						</div><!-- end detailsContainer -->
+				</div><!-- end col-sm-3 -->
+		</div><!-- end container -->
+	</div>
+	</section>	
+	<!-- ================================================== -->
+	<!-- =============== END SINGLE BLOG SECTION ================ -->
+	<!-- ================================================== -->
+
+
+	<!-- ================================================== -->
+	<!-- =============== START PAGINATION ================ -->
+	<!-- ================================================== -->
+	<section class="paginationFooter ">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="col-sm-4">
+						<a href="#" class="pagination-previous">
+							<small>Prev</small>
+							<span>Post</span>
+						</a>
+					</div>
+					<div class="col-sm-4 page-list">
+						<ul class="clearfix">
+							<li><a href="#">1</a></li>
+							<li><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+							<li><a class="current" href="#">4</a></li>
+						</ul>
+					</div>
+					<div class="col-sm-4">
+						<a href="#" class="pagination-next">
+							<small>Next</small>
+							<span>Post</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- ================================================== -->
+	<!-- =============== END PAGINATION ================ -->
+	<!-- ================================================== -->
+
+	<!-- ================================================== -->
+	<!-- =============== FOOTER SECTION ================ -->
+	<!-- ================================================== -->
+	<section style="background-color:#f6f6f5;" class="change-menu zIndex change-logo">
+		<div class="footer footerPadding">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-4">
+						<div class="copyFooter">
+							<a href="#">&copy; Aqura 2015</a>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<nav class="social-icons">
+							<ul>
+	                			<li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
+	                			</li><li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
+	                			<li><a href="#" target="_blank"><i class="fa fa-apple"></i></a></li>   
+	                			<li><a href="#" target="_blank"><i class="fa fa-lastfm"></i></a>
+	                			</li><li><a href="#" target="_blank"><i class="fa fa-soundcloud"></i></a></li>
+	                			<li><a href="#" target="_blank"><i class="fa fa-youtube-play"></i></a></li> 
+	                			<li><a href="#" target="_blank"><i class="fa fa-vine"></i></a></li>          
+                			</ul>
+						</nav>
+					</div>
+					<div class="col-sm-4">
+						<div class="goTop" id="back-to-top">
+							<i class="fa fa-angle-up"></i>
+							<a href="#">Go Top</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- ================================================== -->
+	<!-- =============== END FOOTER SECTION ================ -->
+	<!-- ================================================== -->
+
+	<!-- ================================================== -->
+	<!-- =============== START JQUERY SCRIPTS ================ -->
+	<!-- ================================================== -->
+
+
+
+	<script src="assets/js/jquery.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/counter.js"></script>
+	<script src="assets/js/plugins.js"></script>
+	<script type="text/javascript" src="assets/jplayer/jplayer/jquery.jplayer.js"></script>
+	<script type="text/javascript" src="assets/jplayer/add-on/jplayer.playlist.js"></script>
+	<script type="text/javascript" src="assets/js/playlist.js"></script>
+	<script src="assets/js/main.js"></script>
+
+	<!--[if lte IE 9 ]>
+		<script src="assets/js/placeholder.js"></script>
+		<script>
+			jQuery(function() {
+				jQuery('input, textarea').placeholder();
+			});
+		</script>
+	<![endif]-->
+	
+	<!-- ================================================== -->
+	<!-- =============== END JQUERY SCRIPTS ================ -->
+	<!-- ================================================== -->
+	
+</body>
+</html>
